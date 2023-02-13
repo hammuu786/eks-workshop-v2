@@ -94,7 +94,7 @@ module "eks_blueprints" {
   managed_node_groups = {
     mg_5 = {
       node_group_name = "managed-ondemand"
-      instance_types  = ["t2.medium"]
+      instance_types  = ["t3.medium"]
       subnet_ids      = local.private_subnet_ids
       min_size        = local.default_mng_min
       max_size        = local.default_mng_max
